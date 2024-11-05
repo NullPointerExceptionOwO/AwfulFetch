@@ -1,0 +1,8 @@
+# premake5 generated files and directories
+AwfulFetch.make
+Makefile
+out
+obj
+
+# Private configs
+.clangd
