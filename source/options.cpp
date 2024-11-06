@@ -4,16 +4,25 @@
 #include <unistd.h>
 
 namespace Options {
+
 OptionsSetup
 generateOptionsSetup(int aArgc, char* aArgv[])
 {
   OptionsSetup currentConfig;
   int          option;
-  while ((option = getopt(aArgc, aArgv, "C")) != -1) {
+  while ((option = getopt(aArgc, aArgv, "COA")) != -1) {
     switch (option) {
       case 'C':
         AWFULFETCH_TRACE("currentConfig.useColors=false");
         currentConfig.useColors = false;
+        break;
+      case 'O':
+        AWFULFETCH_TRACE("currentConfig.onlyRandomArt=true");
+        currentConfig.onlyRandomArt = true;
+        break;
+      case 'A':
+        AWFULFETCH_TRACE("currentConfig.anonymize=true");
+        currentConfig.anonymize = true;
         break;
       case '?':
         break;
@@ -23,4 +32,5 @@ generateOptionsSetup(int aArgc, char* aArgv[])
   }
   return currentConfig;
 }
-}
+
+} // namespace Options

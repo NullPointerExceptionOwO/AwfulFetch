@@ -9,7 +9,9 @@ namespace Options {
 /// @brief Container that stores config for current run
 typedef struct OptionsSetup
 {
-  bool useColors = false;
+  bool useColors     = true; //< Use colors
+  bool anonymize     = false; //< Don't show hostname and username
+  bool onlyRandomArt = false; //< Print randomart and quit
 } OptionsSetup;
 
 /// @brief Generate OptionsSetup from argc and argv(using getopt(1)).

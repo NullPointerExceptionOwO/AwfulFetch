@@ -10,12 +10,14 @@ namespace Drawing {
 /// Characters are named accordingly to their unicode names.
 namespace BoxDrawings {
 
-const wchar_t kBoxDrawingsLightHorizontal           = L'─';
-const wchar_t kBoxDrawingsLightVertical             = L'│';
-const wchar_t kBoxDrawingsLightArcUpAndRightndRight = L'╰';
-const wchar_t kBoxDrawingsLightArcDownAndRight      = L'╭';
+// Arcs
 const wchar_t kBoxDrawingsLightArcDownAndLeft       = L'╮';
+const wchar_t kBoxDrawingsLightArcDownAndRight      = L'╭';
 const wchar_t kBoxDrawingsLightArcUpAndLeft         = L'╯';
+const wchar_t kBoxDrawingsLightArcUpAndRightndRight = L'╰';
+// Lines
+const wchar_t kBoxDrawingsLightHorizontal = L'─';
+const wchar_t kBoxDrawingsLightVertical   = L'│';
 
 } // namespace BoxDrawings
 

@@ -2,7 +2,7 @@
 Language: Cpp
 BasedOnStyle: mozilla
 AlignAfterOpenBracket: true
-AlignArrayOfStructures: None
+AlignArrayOfStructures: Left
 AlignConsecutiveAssignments: true
 AlignConsecutiveDeclarations: true
 AlignConsecutiveMacros: true
