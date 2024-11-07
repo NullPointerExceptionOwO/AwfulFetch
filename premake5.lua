@@ -12,6 +12,8 @@ project "AwfulFetch"
 
    includedirs { "include" }
 
+   links { "ssl", "crypto" }
+
    filter "configurations:Debug"
       defines { "DEBUG" }
       symbols "On"

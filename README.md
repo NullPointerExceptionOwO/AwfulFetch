@@ -1,0 +1,4 @@
+# AwfulFetch
+
+## Dependencies
+ - OpenSSL
